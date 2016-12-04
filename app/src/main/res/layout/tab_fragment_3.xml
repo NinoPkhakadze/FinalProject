@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/tab_fragment_3">
+
+
+        <ImageView
+            android:layout_width="@dimen/profile_picture_side_length"
+            android:layout_height="@dimen/profile_picture_side_length"
+            android:layout_marginTop="@dimen/image_top_margin"
+            android:adjustViewBounds="true"
+            android:id="@+id/profile_image"
+            android:src="@drawable/prof_pic"
+            android:layout_marginLeft="@dimen/image_left_margin"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/image_top_margin"
+            android:layout_marginLeft="@dimen/name_left_margin"
+            android:id="@+id/name_text"
+            android:layout_toRightOf="@id/profile_image"
+            android:layout_toEndOf="@id/profile_image"
+            android:text="@string/username"
+            android:textSize="@dimen/name_text_size"
+            android:textStyle="bold"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/phone_number_margin_top"
+            android:layout_marginLeft="@dimen/name_left_margin"
+            android:id="@+id/phone_number_text"
+            android:layout_toRightOf="@id/profile_image"
+            android:layout_toEndOf="@id/profile_image"
+            android:layout_below="@id/name_text"
+            android:text="@string/user_phone_number"
+            android:textSize="@dimen/number_text_size"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/status_bar_notifications"
+            android:layout_below="@id/profile_image"
+            android:layout_marginTop="@dimen/notification_margin_top"
+            android:layout_marginLeft="@dimen/name_left_margin"
+            android:text="@string/status_bar_notification"
+            android:textSize="@dimen/notification_text_size"/>
+
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/status_bar_toggle"
+            android:layout_above="@+id/message_sound_text"
+            android:layout_alignLeft="@+id/message_sound_toggle" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/message_sound_text"
+            android:layout_below="@id/status_bar_notifications"
+            android:layout_marginTop="@dimen/notification_margin_top"
+            android:layout_marginLeft="@dimen/name_left_margin"
+            android:text="@string/incomming_message_sound"
+            android:textSize="@dimen/notification_text_size"/>
+
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/message_sound_toggle"
+            android:layout_marginTop="@dimen/notification_margin_top"
+            android:layout_toRightOf="@id/status_bar_notifications"
+            android:layout_toEndOf="@id/message_sound_text"
+            android:layout_alignBottom="@id/message_sound_text"
+            android:layout_marginLeft="@dimen/name_left_margin"
+            />
+
+
+</RelativeLayout>

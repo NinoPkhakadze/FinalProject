@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">MyChat</string>
+    <string name="username">Yzma Kuzco</string>
+    <string name="user_phone_number">1234567</string>
+    <string name="status_bar_notification">Status bar notification</string>
+    <string name="incomming_message_sound">Incomming message sound</string>
+    <string name="search">search</string>
+    <string name="send_message">Send Message</string>
+
+</resources>
